@@ -16,6 +16,10 @@ public class StudGroup {
         this.group = new ArrayList<>();
     }
 
+    public String getGroupName() {
+        return groupName;
+    }
+
     public void addStudent(Student name) {  // добавление студента в группу
         this.group.add(name);
     }

@@ -36,10 +36,11 @@ public class View {
                 String groupName = scanner.nextLine();
                 System.out.println("Введите имя студента");
                 String studName = scanner.nextLine();
-                groups.getGroup(groupName);
-
+                groups.addingStudents(groupName,studName);
             } else if ("4".equals(command)) {
-                groups.getGroups();
+                System.out.println("Выберетие группу");
+                String groupName = scanner.nextLine();
+                groups.getAllStudsInGroup(groupName);
             } else if ("5".equals(command)) {
                 break;
             }
